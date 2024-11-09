@@ -15,7 +15,7 @@ namespace RealEstate_Dapper_Api.Repositories.CategoryRepository
 
         public async void CreateCategory(CreateCategoryDto categoryDto)
         {
-            string query = "insert into Category (CategoryName, CategoryStatus) values (@categoryname, @categorystatus)";
+            string query = "insert into WhoWeAreDetail (CategoryName, CategoryStatus) values (@categoryname, @categorystatus)";
 
             var parameters = new DynamicParameters();
             parameters.Add("@categoryname", categoryDto.CategoryName);
@@ -71,9 +71,9 @@ namespace RealEstate_Dapper_Api.Repositories.CategoryRepository
             string query = "Update Category Set CategoryName=@categoryName, CategoryStatus=@categoryStatus Where CategoryId=@categoryId";
 
             var parameters = new DynamicParameters();
-            parameters.Add("categoryName", categoryDto.CategoryName);
-            parameters.Add("categoryStatus", categoryDto.CategoryStatus);
-            parameters.Add("categoryId", categoryDto.CategoryId);
+            parameters.Add("@categoryName", categoryDto.CategoryName);
+            parameters.Add("@categoryStatus", categoryDto.CategoryStatus);
+            parameters.Add("@categoryId", categoryDto.CategoryId);
 
             using (var connection = _context.CreateConnection())
             {
