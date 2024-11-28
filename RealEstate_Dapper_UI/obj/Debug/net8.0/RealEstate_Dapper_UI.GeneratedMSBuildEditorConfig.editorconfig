@@ -78,6 +78,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocation/CreatePopularLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uXENyZWF0ZVBvcHVsYXJMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocation/UpdatePopularLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uXFVwZGF0ZVBvcHVsYXJMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Product/CreateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
