@@ -59,10 +59,39 @@ namespace RealEstate_Dapper_UI.Controllers
 			return View();
 		}
 
+		public async Task<IActionResult> ProductDealOfTheDayStatusChangeToFalse(int id)
+		{
+			var handler = new HttpClientHandler
+			{
+				ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => sslPolicyErrors == System.Net.Security.SslPolicyErrors.None || cert.Issuer.Equals("CN=localhost")
+			};
 
+			using var client = new HttpClient(handler);
+			var responseMessage = await client.GetAsync("https://localhost:44305/api/Products/ProductDealOfTheDayStatusChangeToFalse/" + id);
 
+			if (responseMessage.IsSuccessStatusCode)
+			{
+				return RedirectToAction("Index");
+			}
+			return View();
+		}
 
+		public async Task<IActionResult> ProductDealOfTheDayStatusChangeToTrue(int id)
+		{
+			var handler = new HttpClientHandler
+			{
+				ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => sslPolicyErrors == System.Net.Security.SslPolicyErrors.None || cert.Issuer.Equals("CN=localhost")
+			};
 
+			using var client = new HttpClient(handler);
+			var responseMessage = await client.GetAsync("https://localhost:44305/api/Products/ProductDealOfTheDayStatusChangeToTrue/" + id);
+
+			if (responseMessage.IsSuccessStatusCode)
+			{
+				return RedirectToAction("Index");
+			}
+			return View();
+		}
 
 
 

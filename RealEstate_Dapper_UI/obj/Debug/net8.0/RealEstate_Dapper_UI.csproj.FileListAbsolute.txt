@@ -225,3 +225,4 @@ D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\refint\RealEstate
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.pdb
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.genruntimeconfig.cache
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\ref\RealEstate_Dapper_UI.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\libman.json
