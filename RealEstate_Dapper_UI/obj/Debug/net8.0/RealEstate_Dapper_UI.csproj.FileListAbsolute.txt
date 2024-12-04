@@ -226,3 +226,11 @@ D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.genruntimeconfig.cache
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\ref\RealEstate_Dapper_UI.dll
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\libman.json
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

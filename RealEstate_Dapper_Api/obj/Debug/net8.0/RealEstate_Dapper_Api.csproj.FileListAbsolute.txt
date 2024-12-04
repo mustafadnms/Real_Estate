@@ -37,3 +37,8 @@ D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\refint\RealEstat
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\RealEstate_Dapper_Api.pdb
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\RealEstate_Dapper_Api.genruntimeconfig.cache
 D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\ref\RealEstate_Dapper_Api.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\RealEstate_Dapper_Api\RealEstate_Dapper_Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

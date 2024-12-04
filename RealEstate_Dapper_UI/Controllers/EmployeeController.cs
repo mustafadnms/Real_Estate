@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RealEstate_Dapper_UI.Dtos.EmployeeDtos;
 using System.Text;
 
 namespace RealEstate_Dapper_UI.Controllers
 {
+	[Authorize]
 	public class EmployeeController : Controller
 	{
 		private readonly IHttpClientFactory _httpClientFactory;
@@ -16,20 +18,24 @@ namespace RealEstate_Dapper_UI.Controllers
 
 		public async Task<IActionResult> Index()
 		{
-			var handler = new HttpClientHandler
+			var token = User.Claims.FirstOrDefault(x => x.Type == "realestatetoken")?.Value;
+			if (token != null)
 			{
-				ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => sslPolicyErrors == System.Net.Security.SslPolicyErrors.None || cert.Issuer.Equals("CN=localhost")
-			};
+				var handler = new HttpClientHandler
+				{
+					ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => sslPolicyErrors == System.Net.Security.SslPolicyErrors.None || cert.Issuer.Equals("CN=localhost")
+				};
 
-			using var client = new HttpClient(handler);
-			var responseMessage = await client.GetAsync("https://localhost:44305/api/Employees");
+				using var client = new HttpClient(handler);
+				var responseMessage = await client.GetAsync("https://localhost:44305/api/Employees");
 
-			if (responseMessage.IsSuccessStatusCode)
-			{
-				var jsonData = await responseMessage.Content.ReadAsStringAsync();
-				var values = JsonConvert.DeserializeObject<List<ResultEmployeeDto>>(jsonData);
+				if (responseMessage.IsSuccessStatusCode)
+				{
+					var jsonData = await responseMessage.Content.ReadAsStringAsync();
+					var values = JsonConvert.DeserializeObject<List<ResultEmployeeDto>>(jsonData);
 
-				return View(values);
+					return View(values);
+				}
 			}
 			return View();
 		}
