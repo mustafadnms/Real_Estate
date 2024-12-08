@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_UI.Dtos.LoginDtos;
 using RealEstate_Dapper_UI.Models;
+using RealEstate_Dapper_UI.Services;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -14,7 +15,7 @@ namespace RealEstate_Dapper_UI.Controllers
 	{
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public LoginController(IHttpClientFactory httpClientFactory)
+        public LoginController(IHttpClientFactory httpClientFactory, ILoginService loginService)
         {
             _httpClientFactory = httpClientFactory;
         }
