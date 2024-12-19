@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_Api.Dtos.CategoryDtos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.WhoWeAreDetailDtos;
-using RealEstate_Dapper_Api.Repositories.CategoryRepository;
 using RealEstate_Dapper_Api.Repositories.WhoWeAreRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -22,28 +19,28 @@ namespace RealEstate_Dapper_Api.Controllers
         [HttpGet]
         public async Task<IActionResult> WhoWeAreDetailList()
         {
-            var value = await _whoWeAreRepository.GetAllWhoWeAreDetailAsync();
+            var value = await _whoWeAreRepository.GetAllWhoWeAreDetail();
             return Ok(value);
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateWhoWeAreDetail(CreateWhoWeAreDetailDto createWhoWeAreDetailDto)
         {
-            _whoWeAreRepository.CreateWhoWeAreDetail(createWhoWeAreDetailDto);
+            await _whoWeAreRepository.CreateWhoWeAreDetail(createWhoWeAreDetailDto);
             return Ok("Hakkımızda Kısmı Başarılı Bir Şekilde Eklendi");
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteWhoWeAreDetail(int id)
         {
-            _whoWeAreRepository.DeleteWhoWeAreDetail(id);
+            await _whoWeAreRepository.DeleteWhoWeAreDetail(id);
             return Ok("Hakkımızda Kısmı Başarılı Bir Şekilde Silindi");
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateWhoWeAreDetail(UpdateWhoWeAreDetailDto updateWhoWeAreDetailDto)
         {
-            _whoWeAreRepository.UpdateWhoWeAreDetail(updateWhoWeAreDetailDto);
+            await _whoWeAreRepository.UpdateWhoWeAreDetail(updateWhoWeAreDetailDto);
             return Ok("Hakkımızda Kısmı Başarıyla Güncellendi");
         }
 

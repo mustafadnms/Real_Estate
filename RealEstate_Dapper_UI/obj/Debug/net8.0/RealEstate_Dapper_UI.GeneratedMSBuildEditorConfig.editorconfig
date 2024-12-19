@@ -90,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Default/PartialSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxQYXJ0aWFsU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/CreateEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -140,6 +144,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Property/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Property/PropertyListWithSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcUHJvcGVydHlMaXN0V2l0aFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Property/PropertySingle.cshtml]
@@ -268,6 +276,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_NavbarViewComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_PropertyAmenityStatusTrueByPropertyIdComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Byb3BlcnR5QW1lbml0eVN0YXR1c1RydWVCeVByb3BlcnR5SWRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_PropertyAppUserComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Byb3BlcnR5QXBwVXNlckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_PropertySliderComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Byb3BlcnR5U2xpZGVyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Error.cshtml]

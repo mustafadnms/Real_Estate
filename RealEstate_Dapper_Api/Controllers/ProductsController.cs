@@ -53,6 +53,14 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
         }
 
+
+        [HttpGet("GetLast3Product")]
+        public async Task<IActionResult> GetLast3Product()
+        {
+            var values = await _productRepository.GetLast3ProductAsync();
+            return Ok(values);
+        }
+
         [HttpGet("ProductAdvertsListByEmployeeTrue")]
         public async Task<IActionResult> ProductAdvertsListByEmployeeTrue(int id)
         {
@@ -81,7 +89,19 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
         }
 
+        [HttpGet("ResultProductWithSearchList")]
+        public async Task<IActionResult> ResultProductWithSearchList(string searchKeyValue, int propertyCategoryId, string city)
+        {
+            var values = await _productRepository.ResultProductWithSearchList(searchKeyValue,propertyCategoryId,city);
+            return Ok(values);
+        }
 
+        [HttpGet("GetProductByDealOfTheDayTrueWithCategory")]
+        public async Task<IActionResult> GetProductByDealOfTheDayTrueWithCategory()
+        {
+            var values = await _productRepository.GetProductByDealOfTheDayTrueWithCategoryAsync();
+            return Ok(values);
+        }
 
     }
 }
