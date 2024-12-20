@@ -18,7 +18,6 @@ namespace RealEstate_Dapper_UI.Controllers
         }
 
 
-        //https://localhost:44305/api/Categories
         public async Task<IActionResult> Index()
         {
             var handler = new HttpClientHandler
@@ -26,6 +25,8 @@ namespace RealEstate_Dapper_UI.Controllers
                 ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => sslPolicyErrors == System.Net.Security.SslPolicyErrors.None || cert.Issuer.Equals("CN=localhost")
             };
 
+
+            //https://localhost:44305/api/Categories
             using var client = new HttpClient(handler);
             client.BaseAddress = new Uri(_apiSettings.BaseUrl);
             var responseMessage = await client.GetAsync("Categories");
